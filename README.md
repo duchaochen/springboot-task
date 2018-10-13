@@ -127,3 +127,13 @@
 
         //发送
         javaMailSender.send(mimeMessage);
+        
+        
+### idea热部署
+
+    在pom文件中引入spring-boot-devtools,然后每次修改文件之后按Ctrl+F9键即可
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
